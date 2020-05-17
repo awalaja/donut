@@ -1,53 +1,158 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>Donut</title>
-  </head>
-  <body>
-    <header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container row">
+      <button class="nav-toggle" aria-label="open navigation">
+        <span class="hamburger"></span>
+      </button>
       <div class="logo">
-        <a href="#"><img src="" alt=""><h2>donut</h2></a>
+        <a href="#"><img src="donut-logo.svg" alt="" class="logo__img"></a>
       </div>
-      <nav>
+      <nav class="nav">
         <ul>
-          <li><a href="#" alt="">Pairing</a></li>
-          <li><a href="#" alt="">Onboarding</li>
-          <li><a href="#" alt="">About</li>
-          <li><a href="#" alt="">Jobs</li>
-          <li><a href="#" alt="">Sign In</li>
+          <li class="nav__list"><a href="#" alt="" class="nav__link">Pairing</a></li>
+          <li class="nav__list"><a href="#" alt="" class="nav__link">Onboarding</a></li>
+          <li class="nav__list"><a href="#" alt="" class="nav__link">About</a></li>
+          <li class="nav__list"><a href="#" alt="" class="nav__link">Jobs</a></li>
+          <li class="nav__list"><a href="#" alt="" class="nav__link">Sign In</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="landing-page">
-        <h2>Build amazing company culture with Donut</h2>
-        <img src="" alt="girl-with-donut">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__area container">
+      <div class="hero__item">
+        <h2 class="hero__text">Build amazing company culture with Donut</h2>
+        <img src="img\add_to_slack.png" alt="slack button" class="slack__img">
       </div>
-      <div class="logo-group">
+    </div>
+    <img src="img\banner-home-1.svg" alt="girl-with-donut" class="donot__girl">
+  </section>
+
+  <section class="partner__section">
+    <div class="container">
+      <ul class="partner__logos">
+        <li><img src="img\logo_invision_@2x.png" alt="in-vision"></li>
+        <li><img src="img\logo_ibm_@2x.png" alt="ibm"></li>
+        <li><img src="img\logo_blueapron_@2x.png" alt="blue-apron"></li>
+        <li><img src="img\logo_cultureamp_@2x.png" alt="culture-amp"></li>
+        <li><img src="img\logo_q_@2x.png" alt="managed-by-q"></li>
+        <li><img src="img\logo_meetup_@2x.png" alt="meetup"></li>
+        <li><img src="img\logo_ape_@2x.png" alt="a-thinking-ape"></li>
+        <li><img src="img\logo_nulogy_@2x.png" alt="nulogy"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pairing__section row">
+
+    <div class="pair__box--item">
+      <div class="container">
+        <div class="pair__box">
+          <h3 class="pair__title">Pairing</h3>
+          <p class="pair__text">Spread trust and collaboration across your organization by pairing up
+          team members who don't know each other well.</p>
+          <a href="#">Learn more >></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pair__box--item">
+
+      <div class="container">
+        <div class="pair__box">
+          <h3 class="pair__title">Onboarding</h3>
+          <p class="pair__text">Connect new hires with the right people and information from day one
+          with people-first new-hire onboarding.</p>
+          <a href="#">Learn more >></a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="leader__section">
+
+    <div class="container leader__two--col">
+
+      <div class="leader">
+        <img src="img\clark-valberg.png" alt="CEO of Invision" class="leader__img">
+        <img src="img\logo-invision.png" alt="Invision logo" class="invision__logo">
+      </div>
+
+      <div class="leader__position">
+        <h2 class="leader__quote"><q>Donut helps us strengthen personal connections and InVision's company culture.</q></h2>
+        <div class="leader__ceo">
+          <p class="leader__name">Clark Valberg</p>
+          <p class="leader__title"><strong>InVision</strong> CEO & Founder</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="people">
+    <div>
+      <img src="pre-footer.svg" alt="" class="people__img">
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__row">
+      <div class="newsletter footer__col">
+        <form action="">
+          <legend>
+            <p>Sign up for our news letter</p>
+            <input type="text">
+            <input type="button" value="SUBMIT">
+          </legend>
+        </form>
+      </div>
+  
+      <div class="about__us footer__col">
         <ul>
-          <li><img src="" alt="in-vision"></li>
-          <li><img src="" alt="ibm"></li>
-          <li><img src="" alt="blue-apron"></li>
-          <li><img src="" alt="culture-amp"></li>
-          <li><img src="" alt="managed-by-q"></li>
-          <li><img src="" alt="meetup"</li>
-          <li><img src="" alt="a-thinking-ape"></li>
-          <li><img src="" alt="nulogy"></li>
+          <li>About Us</li>
+          <li>Join Us</li>
         </ul>
       </div>
-      <div class="pairing-box">
-        <h3>Pairing</h3>
-        <p>Spread trust and collaboration acros your organization by pairing up
-        team members who don't know each other well.</p>
-        <a href="#">Learn more >></a>
+  
+      <div class="info footer__col">
+        <ul>
+          <li>Support</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+        </ul>
       </div>
-      <div class="onboarding-box">
-        <h3>Onboarding</h3>
-        <p>Connect new hires with the right people and information from day one
-        with people-first new-hire onboarding.</p>
-      </div>
-    </main>
 
-  </body>
+      <div class="footer__col">
+        <div class="social social__icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-github-alt"></i>
+          <i class="fab fa-slack-hash"></i>
+        </div>
+    
+        <div class="dev">
+          <p>Awalaja Technologies</p>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/2b88cb8b9a.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
 </html>
