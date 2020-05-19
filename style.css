@@ -173,6 +173,7 @@ nav {
 
 .partner__section {
     padding: 80px 10px;
+    background-color: #f7f7f7;
 }
 
 /* PAIRING BOXES */
@@ -183,13 +184,35 @@ nav {
 
 .pair__box {
     padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    border-radius: 10px;
+    border-bottom: 2px solid #a34ef2;
+}
+
+.pair__box--item {
+    padding: 40px 0;
+}
+
+.pair__title {
+    font-size: 1em;
+    margin-bottom: 0.6em;
+    color: #a34ef2;
+    letter-spacing: 0.1em;
+}
+
+.pair__text {
+    font-size: 1.125em;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-bottom: 0.6em;
 }
 
 
 /* CEO QUOTE */
 
 .leader__section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .leader {
@@ -262,10 +285,18 @@ input[type="button"] {
     letter-spacing: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+    
+    .row {
+        display: flex;
+    }
+    
+    .col {
+        width: 100%;
+    }
 
-    .container {
-        position: static;
+    .col + .col {
+        margin-left: 4em;
     }
 
     .nav-toggle {
@@ -283,14 +314,10 @@ input[type="button"] {
         position: static;
     }
 
-    .nav__list {
-        display: flex;
-    }
-
     .logo__img {
         align-self: center;
-        width: 12em;
-        padding: 0.8em 0;
+        width: 10em;
+        padding: 0.6em 0;
         margin-bottom: -5px;
     }
 
@@ -328,8 +355,9 @@ input[type="button"] {
         grid-gap: 40px;
     }
 
-    .leader__two--col {
-        display: flex;
+    .pair__box {
+        min-height: 300px;
+        padding: 3em;
     }
 
     .leader {
@@ -339,7 +367,7 @@ input[type="button"] {
     .leader__position {
         flex: 1.5;
         text-align: left;
-        padding-left: 5rem;
+        margin-left: 5rem;
         align-self: center;
     }
 
@@ -363,5 +391,6 @@ input[type="button"] {
 
     .footer__col + .footer__col {
         font-size: 0.8rem;
+        text-align: left;
     }
 }
