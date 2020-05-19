@@ -36,10 +36,6 @@ a{
     position: relative;
 }
 
-.col {
-    width: 100%;
-}
-
 header {
     background-color: #520699;
     width: 100%;
@@ -49,19 +45,12 @@ header {
 }
 
 .logo {
-    text-align: right;
+    text-align: left;
     padding-top: 0.3rem;
 }
 
 .logo__img  {
-    display: inline-block;
     width: 6.25rem;
-}
-
-.logo__text {
-    display: inline-block;
-    font-family: 'Balsamiq Sans', cursive;
-    color: #ffffff;
 }
 
 nav {
@@ -84,8 +73,7 @@ nav {
     transition: opacity 250ms ease;
     display: inline-block;
     position: absolute;
-    left: 0;
-    
+    right: 0;
 }
 
 .nav-toggle:focus,
@@ -123,7 +111,6 @@ nav {
 
 .nav {
     visibility: hidden;
-    height: 0;
     position: absolute;
 }
 
@@ -164,6 +151,8 @@ nav {
 
 
 /* Some elements are hidden in mobile view */
+
+
 
 .donot__girl {
     display: inline-block;
@@ -274,8 +263,48 @@ input[type="button"] {
 }
 
 @media (min-width: 600px) {
+
+    .container {
+        position: static;
+    }
+
     .nav-toggle {
         display: none;
+    }
+
+    .nav__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        visibility: visible;
+        position: static;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .logo__img {
+        align-self: center;
+        width: 12em;
+        padding: 0.8em 0;
+        margin-bottom: -5px;
+    }
+
+    .nav__link {
+        font-size: 1.3em;
+        font-weight: 100;
+        margin-left: 2em;
+    }
+
+    .sign__in a {
+        background-color: white;
+        color: #6706c2;
+        padding: 0.6em 1em;
+        border-radius: 100px;
     }
 
     .hero__text {
@@ -286,11 +315,6 @@ input[type="button"] {
     .donot__girl {
         max-width: 60%;
         right: 4rem;    
-    }
-
-    .row {
-        display: flex;
-        justify-content: space-between;
     }
 
     .hero {
